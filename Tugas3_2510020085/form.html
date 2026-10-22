@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran UKM</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mini Situs Formulir & Data</h1>
+
+        <nav>
+            <a href="data.html">Data Mahasiswa</a> |
+            <a href="form.html">Formulir Pendaftaran UKM</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulir Pendaftaran UKM</h2>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    minlength="3" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"
+                    placeholder="contoh@email.com" required>
+                </p>
+
+                <p>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"
+                    placeholder="Minimal 8 karakter"
+                    minlength="8" required>
+                </p>
+
+                <p>
+                    <label for="umur">Umur:</label><br>
+                    <input type="number" id="umur" name="umur"
+                    min="17" max="60" required>
+                </p>
+
+                <p>
+                    <label for="tanggal">Tanggal Lahir:</label><br>
+                    <input type="date" id="tanggal" name="tanggal"
+                    required>
+                </p>
+
+                <fieldset>
+                    <legend>Jenis Kelamin</legend>
+
+                    <input type="radio" id="laki" name="jk"
+                    value="Laki-laki" required>
+                    <label for="laki">Laki-laki</label>
+
+                    <input type="radio" id="perempuan" name="jk"
+                    value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Minat atau Hobi</legend>
+
+                    <input type="checkbox" id="memasak" name="minat"
+                    value="Memasak">
+                    <label for="memasak">Memasak</label><br>
+
+                    <input type="checkbox" id="musik" name="minat"
+                    value="Musik">
+                    <label for="musik">Musik</label><br>
+
+                    <input type="checkbox" id="desain" name="minat"
+                    value="Desain">
+                    <label for="desain">Desain</label>
+                </fieldset>
+
+                <p>
+                    <label for="ukm">Pilih UKM:</label><br>
+                    <select id="ukm" name="ukm" required>
+                        <option value="">-- Pilih UKM --</option>
+                        <option value="Musik">UKM Musik</option>
+                        <option value="Olahraga">UKM Olahraga</option>
+                        <option value="Fotografi">UKM Fotografi</option>
+                        <option value="Kewirausahaan">UKM Kewirausahaan</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="alasan">Alasan Mendaftar:</label><br>
+                    <textarea id="alasan" name="alasan"
+                    rows="4" cols="35"
+                    placeholder="Tuliskan alasan kamu mendaftar"
+                    required></textarea>
+                </p>
+
+                <button type="submit">Kirim Pendaftaran</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Formulir Pendaftaran UKM</p>
+    </footer>
+
+</body>
+</html>
