@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaksi Star Wars - Tugas 5</title>
+    <!-- Hubungkan ke CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navbar Fixed -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Star Wars Archive</a>
+        <nav class="menu">
+            <a href="#katalog">Katalog Film</a>
+            <a href="#keunggulan">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- 2. Hero / Pembuka -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="eyebrow">KOLEKSI EPIK</span>
+            <h1>Jelajahi <span>Galaksi</span> Jauh, Jauh Sekali</h1>
+            <p>Temukan film-film legendaris Star Wars pilihan dengan kisah pertempuran epik antara Light Side dan Dark Side.</p>
+            <a href="#katalog" class="button">Lihat Katalog</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8d/A_screenshot_from_Star_Wars_Episode_IV_A_New_Hope_depicting_the_Millennium_Falcon.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original/600/400" alt="Star Wars Hero Banner">
+        </div>
+    </section>
+
+    <!-- 3. Kategori Sticky -->
+    <h2 id="katalog" class="category">Katalog Film Pilihan</h2>
+    <p class="subtitle">Pilih film favorit Anda dari era Galactic Civil War</p>
+
+    <!-- 4. Daftar Produk / Kartu Produk -->
+    <main class="product-list">
+
+        <!-- Produk 1: Rogue One -->
+        <article class="product-card" style="display: inline-block; width: 260px; vertical-align: top;">
+            <span class="badge">Baru</span>
+            <div class="product-image" style="width: 100%; height: 160px; overflow: hidden; border-radius: 8px;">
+                <img src="https://variety.com/wp-content/uploads/2016/10/rogue-one.jpg?w=1000&h=563&crop=1/400/300" alt="Rogue One" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <p class="tag">SPIN-OFF</p>
+            <h3>Rogue One: A Star Wars Story</h3>
+            <p class="description">Misi rahasia pasukan pemberontak.</p>
+            <div class="product-bottom">
+                <span class="price">Rp 135.000</span>
+                <a href="#" class="button">Beli Film</a>
+            </div>
+        </article>
+
+        <!-- Produk 2: A New Hope -->
+        <article class="product-card" style="display: inline-block; width: 260px; vertical-align: top;">
+            <span class="badge badge-green">Klasik</span>
+            <div class="product-image" style="width: 100%; height: 160px; overflow: hidden; border-radius: 8px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt6wmcqkqBU-GzZYHXTe1d2u2WNrLSjw7kjNcLmSbNexOLCu1hxk8NLig&s=10/400/300" alt="A New Hope" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <p class="tag">EPISODE IV</p>
+            <h3>A New Hope</h3>
+            <p class="description">Perjalanan awal Luke Skywalker.</p>
+            <div class="product-bottom">
+                <span class="price">Rp 120.000</span>
+                <a href="#" class="button">Beli Film</a>
+            </div>
+        </article>
+
+        <!-- Produk 3: The Empire Strikes Back -->
+        <article class="product-card" style="display: inline-block; width: 260px; vertical-align: top;">
+            <span class="badge badge-pink">Terlaris</span>
+            <div class="product-image" style="width: 100%; height: 160px; overflow: hidden; border-radius: 8px;">
+                <img src="https://variety.com/wp-content/uploads/1980/05/Empire-Strikes-Back.jpg?w=1000&h=563&crop=1/400/300" alt="The Empire Strikes Back" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <p class="tag">EPISODE V</p>
+            <h3>The Empire Strikes Back</h3>
+            <p class="description">Pertempuran sengit di ujung galaksi.</p>
+            <div class="product-bottom">
+                <span class="price">Rp 125.000</span>
+                <a href="#" class="button">Beli Film</a>
+            </div>
+        </article>
+
+        <!-- Produk 4: Return of the Jedi -->
+        <article class="product-card" style="display: inline-block; width: 260px; vertical-align: top;">
+            <span class="badge">Epik</span>
+            <div class="product-image" style="width: 100%; height: 160px; overflow: hidden; border-radius: 8px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-W2NvL7s3WA-IlO8iC4lovxAOFMeaxPtL_BCvjEMmUkAWnEu0IuvKQQ&s=10/400/300" alt="Return of the Jedi" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <p class="tag">EPISODE VI</p>
+            <h3>Return of the Jedi</h3>
+            <p class="description">Konfrontasi akhir takdir galaksi.</p>
+            <div class="product-bottom">
+                <span class="price">Rp 130.000</span>
+                <a href="#" class="button">Beli Film</a>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- 5. Keunggulan / Benefits -->
+    <section id="keunggulan" class="benefits">
+        <div>
+            <span>🚀</span>
+            <h3>Kualitas HD</h3>
+            <p>Resolusi penayangan sinematik jernih kualitas tinggi.</p>
+        </div>
+        <div>
+            <span>🌌</span>
+            <h3>Subtitles</h3>
+            <p>Tersedia takarir bahasa Indonesia lengkap.</p>
+        </div>
+        <div>
+            <span>🛡️</span>
+            <h3>Akses Resmi</h3>
+            <p>Koleksi digital legal dan terverifikasi aman.</p>
+        </div>
+    </section>
+
+    <!-- 6. Kontak -->
+    <section id="kontak" class="contact">
+        <h2>Punya Pertanyaan Seputar Koleksi?</h2>
+        <p>Hubungi pusat kendali galaksi kami untuk informasi pemesanan lebih lanjut.</p>
+        <a href="mailto:fahmin@student.uniska-bjm.ac.id" class="button">Kirim Pesan</a>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer>
+        <p>&copy; 2026 Ahmad Fahmin Nazhirin &bull; NPM: 2510020085 &bull; Kelas 3A SI Nonreg</p>
+    </footer>
+
+</body>
+</html>
