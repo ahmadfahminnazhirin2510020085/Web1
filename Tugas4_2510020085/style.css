@@ -1,0 +1,126 @@
+
+:root {
+    --warna-utama: #2F3E46;    /* Abu-abu Kehijauan Gelap */
+    --warna-aksen: #52796F;    /* Hijau Sage */
+    --warna-terang: #CAD2C5;   /* Hijau Muda Pucat */
+    --warna-bg: #F7F9F8;       /* Putih Kehijauan Lembut */
+    --warna-teks: #1F2937;     /* Abu-abu Gelap untuk Teks */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8; /* Line-height nyaman dibaca */
+    color: var(--warna-teks);
+    background-color: var(--warna-bg);
+}
+
+
+#header {
+    background-color: var(--warna-utama);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase; /* Text-transform */
+    letter-spacing: 2px;       /* Letter-spacing */
+    margin-bottom: 5px;
+}
+
+#header p {
+    margin-top: 0;
+    color: var(--warna-terang);
+}
+
+nav {
+    background-color: var(--warna-aksen);
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+
+nav a:hover {
+    color: var(--warna-terang);
+}
+
+
+main {
+    max-width: 720px; /* Lebar konten dibatasi max-width 720px */
+    margin: 0 auto;   /* margin: 0 auto agar berada di tengah */
+    padding: 25px;
+    background-color: #FFFFFF;
+}
+
+/* Child Selector (>) */
+article > h2,
+section > h2 {
+    color: var(--warna-utama);
+    font-size: 22px;
+    border-bottom: 2px solid var(--warna-terang);
+    padding-bottom: 8px;
+}
+
+article p {
+    font-size: 16px;
+    text-align: justify; /* Text-align sesuai konteks */
+}
+
+/* Pseudo-Class Selector (:nth-child) */
+article p:nth-child(even) {
+    background-color: #F1F5F4;
+}
+
+.pembuka {
+    background-color: #E8F1EE;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.tanggal {
+    color: #4A5568;
+    font-size: 14px;
+}
+
+blockquote {
+    background-color: #E8F1EE;
+    border-left: 4px solid var(--warna-aksen);
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: var(--warna-aksen);
+}
+
+/* Descendant Selector */
+article a:hover {
+    color: var(--warna-utama);
+}
+
+footer {
+    background-color: var(--warna-utama);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
